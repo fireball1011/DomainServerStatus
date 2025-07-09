@@ -1,0 +1,15 @@
+[
+  {
+    "hostname": "server1.example.com",
+    "services": [
+      {"name": "HTTP", "port": 80},
+      {"name": "HTTPS", "port": 443}
+    ]
+  },
+  {
+    "hostname": "server2.example.com",
+    "services": [
+      {"name": "RDP", "port": 3389}
+    ]
+  }
+]
