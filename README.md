@@ -14,3 +14,7 @@ Dieses Projekt demonstriert eine einfache Flask-Webanwendung, die Server einer W
 python -m server_status.app
 ```
 Die Webseite ist anschließend unter [http://localhost:5000](http://localhost:5000) erreichbar.
+
+### PKI Jump-and-Run
+Im Browser steht unter `/pki-game` ein kleines Jump-and-Run-Spiel bereit. Es vermittelt spielerisch die Konzepte von Public-Key-Infrastrukturen wie Public Key, Private Key und Zertifikate.
+
