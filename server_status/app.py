@@ -1,7 +1,13 @@
+import os
 from flask import Flask, render_template
 from .status import collect_status
 
-app = Flask(__name__)
+# Locate the template folder one directory above this package so
+# ``render_template`` can find ``index.html`` when the package is executed
+# as a module via ``python -m server_status.app``.
+TEMPLATE_FOLDER = os.path.join(os.path.dirname(__file__), '..', 'templates')
+
+app = Flask(__name__, template_folder=TEMPLATE_FOLDER)
 
 @app.route('/')
 def index():
